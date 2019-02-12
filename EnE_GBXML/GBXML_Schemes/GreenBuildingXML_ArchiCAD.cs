@@ -2189,17 +2189,21 @@ namespace GreenBuildingXML_ArchiCAD
     public partial class gbXMLCampusBuildingSpaceShellGeometry
     {
 
-        private decimal[][][][] closedShellField;
+        private decimal[][][] closedShellField;
 
         private string idField;
 
         private string unitField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("PolyLoop", typeof(decimal[][]), IsNullable = false)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("CartesianPoint", typeof(decimal[]), IsNullable = false, NestingLevel = 1)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("Coordinate", typeof(decimal), IsNullable = false, NestingLevel = 2)]
-        public decimal[][][][] ClosedShell
+        //[System.Xml.Serialization.XmlArrayItemAttribute("PolyLoop", typeof(decimal[][]), IsNullable = false)]
+        //[System.Xml.Serialization.XmlArrayItemAttribute("CartesianPoint", typeof(decimal[]), IsNullable = false, NestingLevel = 1)]
+        //[System.Xml.Serialization.XmlArrayItemAttribute("Coordinate", typeof(decimal), IsNullable = false, NestingLevel = 2)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("PolyLoop", IsNullable = false)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("CartesianPoint", IsNullable = false, NestingLevel = 1)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Coordinate", IsNullable = false, NestingLevel = 2)]
+        public decimal[][][] ClosedShell
         {
             get
             {
