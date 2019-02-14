@@ -2607,7 +2607,7 @@ namespace GreenBuildingXML_ArchiCAD
         private string programIdField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.Xml.Serialization.XmlAttributeAttribute]
         public System.DateTime date
         {
             get
